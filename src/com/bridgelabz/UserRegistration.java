@@ -29,7 +29,7 @@ public class UserRegistration {
          Applying the Regex pattern to check whether the email matches the pattern or not
          */
         System.out.print("Enter your e-mail id: ");
-        boolean email = Pattern.matches("^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*" + "@([a-zA-Z0-9][-]?)+[.][a-zA-Z]{2,4}([.]{2,4})?$", sc.next());
+        boolean email = Pattern.matches("^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@([a-zA-Z0-9]?)+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})?$", sc.next());
         System.out.println("Result : " + email);
 
         System.out.println(" ");
