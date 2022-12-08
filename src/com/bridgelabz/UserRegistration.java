@@ -46,9 +46,10 @@ public class UserRegistration {
         Password must be minimum of 8 character.
         at least one upper-case.
         at least one number.
+        at least one special character.
          */
         System.out.print("Enter your Password: ");
-        boolean password = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$", sc.next());
+        boolean password = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()]).{8,20}$", sc.next());
         System.out.println("Result : " + password);
 
         System.out.println(" ");
