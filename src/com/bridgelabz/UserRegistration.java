@@ -49,7 +49,6 @@ public class UserRegistration {
         System.out.print("Enter your Password: ");
         boolean password = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z]).{8,20}$", sc.next());
         System.out.println("Result : " + password);
-
         System.out.println(" ");
     }
 }
